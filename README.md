@@ -38,3 +38,17 @@ Inspired by Comply365's work in managing, rendering, and transforming structured
   <origin>PHX</origin>
   <destination>JFK</destination>
 </flight>
+```
+
+## 🔧 Setup
+```
+git clone https://github.com/nelsonbrett55/structured-data-converter.git
+cd structured-data-converter
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+```
+
+## Run the converter:
+```
+python src/convert.py
