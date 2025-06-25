@@ -1,7 +1,12 @@
+from pathlib import Path
 from lxml import etree
 import json
-import os
-import time
+
+# Use pathlib for clean and readable paths
+BASE_DIR = Path(__file__).parent.resolve()
+DATA_DIR = BASE_DIR / "data"
+OUTPUT_DIR = BASE_DIR / "output"
+OUTPUT_DIR.mkdir(exist_ok=True)
 
 def apply_xslt(xml_path, xsl_path, output_path):
     dom = etree.parse(xml_path)
@@ -32,27 +37,19 @@ def json_to_xml(json_path, output_path):
 
     root = etree.Element("root")
     build_xml(root, data)
-
     tree = etree.ElementTree(root)
     tree.write(output_path, pretty_print=True)
     print("✅ JSON to XML complete.")
 
-SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-DATA_DIR = os.path.join(SCRIPT_DIR, "data")
-OUTPUT_DIR = os.path.join(SCRIPT_DIR, "output")
-
-os.makedirs(OUTPUT_DIR, exist_ok=True)
-
 if __name__ == "__main__":
     try:
-        input_json = os.path.join(DATA_DIR, "input.json")
-        output_xml = os.path.join(OUTPUT_DIR, "output.xml")
-        input_xsl = os.path.join(DATA_DIR, "transform.xsl")
-        output_html = os.path.join(OUTPUT_DIR, "output.html")
+        input_json = DATA_DIR / "input.json"
+        output_xml = OUTPUT_DIR / "output.xml"
+        input_xsl = DATA_DIR / "transform.xsl"
+        output_html = OUTPUT_DIR / "output.html"
 
         json_to_xml(input_json, output_xml)
         apply_xslt(output_xml, input_xsl, output_html)
-        time.sleep(2)
 
     except Exception as e:
         print(f"❌ Error: {e}")

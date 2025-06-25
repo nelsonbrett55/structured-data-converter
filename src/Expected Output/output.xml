@@ -1,0 +1,36 @@
+<root>
+  <title>Employee Directory</title>
+  <company>TechCorp Inc.</company>
+  <employees>
+    <item>
+      <name>Alice Johnson</name>
+      <title>Senior Developer</title>
+      <department>Engineering</department>
+      <skills>
+        <item>Python</item>
+        <item>React</item>
+        <item>Docker</item>
+      </skills>
+    </item>
+    <item>
+      <name>Bob Smith</name>
+      <title>Project Manager</title>
+      <department>Operations</department>
+      <skills>
+        <item>Agile</item>
+        <item>Scrum</item>
+        <item>Leadership</item>
+      </skills>
+    </item>
+    <item>
+      <name>Charlie Lee</name>
+      <title>UX Designer</title>
+      <department>Design</department>
+      <skills>
+        <item>Figma</item>
+        <item>Sketch</item>
+        <item>User Research</item>
+      </skills>
+    </item>
+  </employees>
+</root>
