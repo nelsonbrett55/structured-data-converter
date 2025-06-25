@@ -65,3 +65,12 @@ pip install xmlschema
 ## Run the converter:
 ```
 python src/convert.py
+
+```
+
+## View Outputs
+```
+src\output\output.xml
+src\output\output.html
+
+```
