@@ -47,7 +47,9 @@ cd structured-data-converter
 python -m venv venv
 venv\Scripts\activate.bat
 python.exe -m pip install --upgrade pip
-pip install -r requirements.txt
+pip install lxml
+pip install xmlschema
+
 ```
 ## 🔧 Setup Linux
 ```
@@ -56,7 +58,9 @@ cd structured-data-converter
 python3 -m venv venv
 source venv/bin/activate
 python.exe -m pip install --upgrade pip
-pip install -r requirements.txt
+pip install lxml
+pip install xmlschema
+
 ```
 ## Run the converter:
 ```
