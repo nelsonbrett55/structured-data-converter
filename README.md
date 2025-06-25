@@ -76,11 +76,11 @@ src\output\output.html
 ```
 
 ## Screenshots
-# input.json
+**input.json**
 ![Screenshot](https://github.com/nelsonbrett55/structured-data-converter/blob/1a6146ec52f3c177b8de234e064ab6f7acc2b635/screenshots/input.json.png)
 
-# output.xml
+**output.xml**
 ![Screenshot](https://github.com/nelsonbrett55/structured-data-converter/blob/1a6146ec52f3c177b8de234e064ab6f7acc2b635/screenshots/output.xml.png)
 
-# output.html
+**output.html**
 ![Screenshot](https://github.com/nelsonbrett55/structured-data-converter/blob/1a6146ec52f3c177b8de234e064ab6f7acc2b635/screenshots/output.html.png)
