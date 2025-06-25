@@ -1,0 +1,24 @@
+{
+  "title": "Employee Directory",
+  "company": "TechCorp Inc.",
+  "employees": [
+    {
+      "name": "Alice Johnson",
+      "title": "Senior Developer",
+      "department": "Engineering",
+      "skills": ["Python", "React", "Docker"]
+    },
+    {
+      "name": "Bob Smith",
+      "title": "Project Manager",
+      "department": "Operations",
+      "skills": ["Agile", "Scrum", "Leadership"]
+    },
+    {
+      "name": "Charlie Lee",
+      "title": "UX Designer",
+      "department": "Design",
+      "skills": ["Figma", "Sketch", "User Research"]
+    }
+  ]
+}
