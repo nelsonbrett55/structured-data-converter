@@ -8,12 +8,13 @@ Inspired by Comply365's work in managing, rendering, and transforming structured
 
 ## 🚀 Features
 
-- ✅ Convert XML ➝ HTML using `XSLT`
-- ✅ Convert JSON ➝ XML and CSV ➝ XML using Python
-- ✅ Validate XML against XSD Schema
-- ✅ Preview raw and transformed outputs
-- ✅ Command-line interface for automation
-- 🔄 Optional Flask-based web viewer
+- ✅ Convert XML ➝ HTML using `XSLT` (via `lxml.etree.XSLT`)
+- ✅ Convert JSON ➝ XML using a recursive converter
+- ✅ Outputs raw `.xml` and transformed `.html` files
+- ✅ Runs as a standalone script from the command line
+- ⛔ CSV to XML transformation (not implemented yet)
+- ⛔ XML Schema (XSD) validation (not implemented yet)
+- ⛔ Flask web interface (not implemented yet)
 
 ---
 
